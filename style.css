@@ -1,0 +1,89 @@
+/* GENERALI */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chakra Petch', sans-serif;
+}
+/* FINE GENERALI */
+
+
+
+/* COMUNI */
+.container {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.yellow-txt {
+    color: #F6C519;
+}
+/* FINE COMUNI */
+
+
+
+/* HEADER */
+header {
+    background-color: #121212;
+    height: 50px;
+}
+
+header .container {
+    align-items: center;
+}
+
+header .page-title {
+    text-transform: uppercase;
+}
+/* FINE HEADER */
+
+
+
+/* MAIN */
+main {
+    background-color: #000;
+    color: #fff;
+    height: calc(100vh - 50px);
+    overflow-y: scroll;
+    padding: 50px 0px;
+}
+
+main .container {
+    flex-direction: column;
+}
+
+.movie-container {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+.movie-container:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.movie-container .movie-poster {
+    width: 200px;
+}
+
+.movie-container .movie-poster img {
+    width: 100%;
+}
+
+.movie-container .movie-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.movie-info .genres .genre:not(:last-child)::after {
+    content: '-';
+    padding: 0 5px;
+  }
+/* FINE MAIN */
+
